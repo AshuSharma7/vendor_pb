@@ -89,6 +89,8 @@ else
 	cp -R "$PB_VENDOR/updater/update-binary" "$PB_WORK_DIR/META-INF/com/google/android/update-binary"
 fi
 
+cp -R "$PB_VENDOR/updater/pbrp" "$PB_WORK_DIR/META-INF/com/google/android/pbrp"
+
 echo -e "${cyan}**** Copying Recovery Image ****${nocol}"
 mkdir -p "$PB_WORK_DIR/TWRP"
 cp "$RECOVERY_IMG" "$PB_WORK_DIR/TWRP/"
